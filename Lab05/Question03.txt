@@ -1,0 +1,22 @@
+(a)
+
+Online Bookshop
+Book
+Magazine
+CD
+Product
+Price
+Title
+Author
+Artist
+Type
+Customer
+Order
+Ordered Product
+Shipment
+Payment
+Credit Card
+Invoice
+Delivery
+Report
+Product Report

@@ -1,0 +1,95 @@
+(a) 
+
+Cable TV Company
+Customer
+Customer Details
+Customer Number
+Package
+Channel
+Subscription
+Subscription Table
+Bill
+Task
+TV Schedule
+Email
+Payment
+Credit Card
+Payment Details
+Amount
+
+(B)
+
+Customer
+Package
+Channel
+Subscription
+Bill
+TVSchedule
+Payment
+CreditCard
+
+(C)
+
+CRC 1 — Customer
+ _____________________________________________
+| Class                | Customer             |
+ _____________________________________________
+| Responsibilities     | Collaborators        |
+| Register customer    | Subscription         |
+| Store customer data  | Bill                 |
+| Request schedules    | Payment              |
+|_____________________________________________|
+
+CRC 2 — Subscription
+ _____________________________________________
+| Class                | Subscription         |
+| ____________________________________________|
+| Responsibilities     | Collaborators        |
+| Store selected       | Customer             |
+| channels             | Channel              |
+| Add new channels     | Package              |
+| Remove channels      | TVSchedule           |
+| Store schedule       |                      |
+| requests             |                      |
+|_____________________________________________|
+
+CRC 3 — Channel
+
+ _____________________________________________
+| Class                | Channel              |
+ _____________________________________________
+| Responsibilities     | Collaborators        |
+| Store channel        | Subscription         |
+| details              | Package              |
+| Provide channel      | TVSchedule           |
+| information          |                      |
+| Maintain schedule    |                      |
+| information          |                      |
+|_____________________________________________|
+
+CRC 4 — Bill
+
+ _____________________________________________
+| Class                | Bill                 |
+ _____________________________________________
+| Responsibilities     | Collaborators        |
+| Calculate monthly    | Customer             |
+| charges              | Subscription         |
+| Generate detailed    | Payment              |
+| bills                |                      |
+| Display bill details |                      |
+| ____________________________________________|
+
+CRC 5 — Payment
+
+ _____________________________________________
+| Class                | Payment              |
+ _____________________________________________
+| Responsibilities     | Collaborators        |
+| Record payment       | Customer             |
+| details              | Bill                 |
+| Store payment amount | CreditCard           |
+| Process bill payment |                      |
+|_____________________________________________|
+
+
